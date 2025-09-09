@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-pinecone" %}
-{% set version = "2.3.3" %}
+{% set version = "2.3.4" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_pinecone-{{ version }}.tar.gz
-  sha256: 2deea1480bb2ec24d2820a1fe51b810f320cf3e9ffee88d4e6443fd4bf101ba6
+  sha256: 784c920326f3c0d8ef16bb28db18e505dbefeb2c80d82fd8004af436752f7bf7
 
 build:
   noarch: python
