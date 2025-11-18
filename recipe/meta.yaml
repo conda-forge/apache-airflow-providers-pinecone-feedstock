@@ -1,6 +1,5 @@
 {% set name = "apache-airflow-providers-pinecone" %}
 {% set version = "2.3.5" %}
-{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -21,9 +20,9 @@ requirements:
     - flit-core ==3.12.0
     - pip
   run:
-    - apache-airflow-providers-common-compat >=1.8.0
     - python >={{ python_min }}
     - apache-airflow >=2.10.0
+    - apache-airflow-providers-common-compat >=1.8.0
     - pinecone >=7.0.0
 
 test:
@@ -39,7 +38,9 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-pinecone for Apache Airflow
   license: Apache-2.0
-  license_file: src/airflow/providers/pinecone/LICENSE
+  license_file:
+    - LICENSE
+    - NOTICE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-pinecone/stable/index.html
   dev_url: https://github.com/apache/airflow/
