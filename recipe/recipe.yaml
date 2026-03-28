@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-pinecone
-  version: "2.4.2"
+  version: "2.4.3"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_pinecone-${{ version }}.tar.gz
-  sha256: 5cc1aa8667b58256e1b0845ec5059e8546456d8239715540a27992f9ec2d42fa
+  sha256: 5935ad038e27612b43b43b5fa2e377049f9fd6a4671bfad8568239758a944073
 
 build:
   noarch: python
